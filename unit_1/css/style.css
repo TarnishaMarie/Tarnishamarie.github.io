@@ -4,12 +4,17 @@ body {
 
 h1 {
 	color:#7FCBC2;
+	font: helvetica;
 }
 
 h2 {
 	color:#444;
+	font: helvetica;
 }
 
 p {
 	color:white;
+	font: helvetica;
+	line-height: 16px;
+	width: 400px;
 }
