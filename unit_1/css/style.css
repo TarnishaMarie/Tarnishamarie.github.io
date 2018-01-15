@@ -1,20 +1,20 @@
 body {
-	background-color: #EEEEEE;
+	background-color: #EAEAEA;
 }
 
 h1 {
-	color:#7FCBC2;
-	font: helvetica;
+	color:#08D9D6;
+	font-family: helvetica;
 }
 
 h2 {
-	color: #393e46 ;
-	font: helvetica;
+	color: #FF2E63 ;
+	font-family: helvetica;
 }
 
 p {
-	color:#222831;
-	font: helvetica;
+	color:#252A34;
+	font-family: helvetica;
 	line-height: 16px;
 	width: 700px;
 }
