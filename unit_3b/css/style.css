@@ -1,10 +1,23 @@
 body{
 	font-family: avenir, san-serif;
-	background: #14223F;
-	padding-top: 30px;
-	padding-right: : 30px;
-	padding-left: : 30px;
-	padding-bottom: 30px;
+	background-color: #14223F;
+	background-image: url(../images/name.svg);
+	background-repeat: no-repeat;
+	background-size: 105%;
+	background-position: bottom;
+	padding-top:30px;
+	padding-right:30px;
+	padding-left:30px;
+	padding-bottom:30px;
+	min-height: 100vh;
+}
+
+#logo{
+	float:left;
+	position:absolute;
+	top:20px;
+	left:30px;
+	width:6%;
 }
 	
 #slogan{
@@ -22,28 +35,55 @@ body{
 	display:block;
 	position:absolute;
 	margin:auto;
-	text-align:center;
+	width:40%;
+	left: 30vw;
+    top: 15vh;
 }
 
 .menu{
 	text-decoration: none; 
 	color: white;
+	padding-left:10px;
+	padding-right:10px;
+
 }
 
 #topbar{
 	text-align:right;
-	padding-right: 50px
+	padding-left:30px;
 
 }
 
 
 hr{
 	 border: 1px solid #B29E7D;
-	 width: 93%;
+	 width: 95%;
+	 margin-left: 60px;
+	
 }
 
-#name{
 
-	z-index:-1;
-	width: 100%;
+#navsection{
+	height:70vh;
+}
+
+
+#navimage{
+	z-index:4;
+}
+
+#navimage2{
+	z-index:3;
+}
+
+#navimage3{
+	z-index:2;
+}
+
+#gaussianblur{
+	z-index:1;
+}
+
+#inter{
+	color:#C8C8C8;
 }
