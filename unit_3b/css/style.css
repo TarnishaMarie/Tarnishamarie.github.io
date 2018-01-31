@@ -87,3 +87,17 @@ hr{
 #inter{
 	color:#C8C8C8;
 }
+
+#list, #contactme {
+
+	color:#C8C8C8;
+	text-align: center;
+	width:250px;
+	margin:auto;
+}
+
+ul{
+	padding: 0;
+    list-style-type: none;
+}
+
