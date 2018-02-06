@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="800px" height="700px" viewBox="0 0 800 700" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard Copy 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-5.9%" y="-5.9%" width="111.9%" height="111.9%" filterUnits="objectBoundingBox" id="filter-1">
+            <feGaussianBlur stdDeviation="10" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="Page-3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0.08">
+        <g id="Artboard-Copy-3" fill="#D8D8D8">
+            <circle id="Oval" filter="url(#filter-1)" cx="400" cy="350" r="253"></circle>
+        </g>
+    </g>
+</svg>
