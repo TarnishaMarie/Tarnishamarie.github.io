@@ -1,42 +1,44 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
 
 body{
 	background-color: #14223F;
 	background-image: url(../images/name.svg);
 	background-repeat: no-repeat;
 	background-size: 105%;
-	background-position: bottom;
-	padding-top:30px;
-	padding-right:30px;
-	padding-left:30px;
-	padding-bottom:30px;
-	min-height: 100vh;
+}
+
+img{
+	display:block;
+	width:100%;
 }
 
 #topbar{
+	position:relative;
 	text-align:right;
-	padding-left:30px;
+	padding-top: 30px;
 	width: 85%;
 	max-width: 900px;
 	margin:auto;
-
-}
-
-#logosection{
-	
-	width:80%;
-	max-width: 900px;
+	border-bottom:1px solid #B29E7D;
 	padding-bottom: 20px;
+
 }
+
 
 #logo{
-	float:left;
+	display:block;
 	position:absolute;
-	top:20px;
-	left:10vw;
-	width:6%;
-	min-width: 50px;
+	top:0px;
+	left:20px;
+	width:100px;
+	background:#B29E7D;
 }
 
 
@@ -52,34 +54,24 @@ body{
 
 }
 
-hr{
-	 border: 1px solid #B29E7D;
-/*	 width: 85%;*/
-	 max-width: 950px;
-	 margin-top: 10px;
-	 margin-left:auto;
-	 margin-right:auto;
-	 margin-bottom: 60vh;
-	
+#navsection{
+	margin-top:20px;
 }
 
-/*#navsection{
-	width:60vw;
-	top-margin:10em;
-	
 
-}*/
-	
-
-#navimage, #navimage2, #navimage3, #gaussianblur {
-
-	display:block;
-	position:absolute;
-	left: 30vw;
-  	top: 15vh;
+#navcircle{
+	position:relative;
     width:60vw;
     max-width:500px;
-/*    margin:auto;*/
+    margin:0 auto;
+}
+	
+
+#navimage2, #navimage3, #gaussianblur {
+
+	position:absolute;
+	top:0;
+	left:0;
 
 }
 
@@ -87,6 +79,7 @@ hr{
 
 #navimage{
 	z-index:4;
+	position:relative;
 }
 
 #navimage2{
