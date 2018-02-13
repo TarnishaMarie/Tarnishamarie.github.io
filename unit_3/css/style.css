@@ -1,80 +1,103 @@
-
 body{
-
-	/*background: #050a14;*/
 	font-family: avenir, san-serif;
-	text-align:center;
-/*	background: url(https://i.imgur.com/hnnMoC2.jpg);
-	background-size:cover;*/
-	background: linear-gradient(to bottom right, #050a14, #14223F);
+	background-color: #14223F;
+	background-image: url(../images/name.svg);
+	background-repeat: no-repeat;
+	background-size: 105%;
+	background-position: bottom;
+	padding-top:30px;
+	padding-right:30px;
+	padding-left:30px;
+	padding-bottom:30px;
+	min-height: 100vh;
+}
+
+#logo{
+	float:left;
+	position:absolute;
+	top:20px;
+	left:30px;
+	width:6%;
 }
 	
-
-h1{
-	color:white;
-}
-
-
-
-#navimage, #navimage2, #navimage3 {
-
-	width: 30%;
-    height: auto;
-	margin: 0 auto;
-	display:block;
-
-}
-
-
-#introtext{
-	text-align:center;
-	margin-top:60px;
-}
-
 #slogan{
-
-	color:white;
-
-}
-
-
-#links{
 	color:#B29E7D;
+	text-align:center;
+}	
+
+#myname{
+	color:#C8C8C8;
+	text-align:center;
+}	
+
+#navimage, #navimage2, #navimage3, #gaussianblur {
+
+	display:block;
+	position:absolute;
+	margin:auto;
+	width:40%;
+	left: 30vw;
+    top: 15vh;
 }
 
+.menu{
+	text-decoration: none; 
+	color: white;
+	padding-left:10px;
+	padding-right:10px;
 
-
-/*
-
-#mainheader{
-	position: relative;
-    top: 30px;
 }
 
-#mainnav{
+#topbar{
 	text-align:right;
-	position:relative;
-    top: -140px;
-    right:30px;
-    text-decoration:none;
-    color:White;
+	padding-left:30px;
+
 }
 
-#logo {
-    width: 30%;
-    height: auto;
-	display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: : auto;
-    margin-bottom: auto;
-    position: relative;
+
+hr{
+	 border: 1px solid #B29E7D;
+	 width: 95%;
+	 margin-left: 60px;
+	
 }
 
-#logo2 {
-    width: 8%;
-    height: auto;
-   
-}*/
 
+#navsection{
+	height:70vh;
+}
+
+
+#navimage{
+	z-index:4;
+}
+
+#navimage2{
+	z-index:3;
+}
+
+#navimage3{
+	z-index:2;
+}
+
+#gaussianblur{
+	z-index:1;
+}
+
+#inter{
+	color:#C8C8C8;
+}
+
+#list, #contactme {
+
+	color:#C8C8C8;
+	text-align: center;
+	width:250px;
+	margin:auto;
+}
+
+ul{
+	padding: 0;
+    list-style-type: none;
+}
 
