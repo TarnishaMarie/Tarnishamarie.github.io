@@ -84,40 +84,4 @@ nav,aside,article,section,div,header, img{
     padding: 20px;
 }
 
-.bodytext{
-	font-family: 'Open Sans', sans-serif;
-	font-size: 18px;
-	font-weight: 300;
-	line-height: 1.7em;
-	color:#fff;
-	width:80%;
-	max-width: 900px;
-	margin:auto;
-}
-
-.headertext{
-	font-family: 'Open Sans', sans-serif;
-	color:#fff;
-	font-size: 26px;
-	font-weight: 700;
-	letter-spacing:0.1em;
-	line-height: 1.5em;
-	width:80%;
-	max-width: 900px;
-	margin:auto;
-	padding-bottom: 20px;
-}
-
-.header2text{
-	font-family: 'Open Sans', sans-serif;
-	color:#B29E7D;
-	font-size: 24px;
-	font-weight: 200;
-	letter-spacing:0.1em;
-	line-height: 1.5em;
-	width:80%;
-	max-width: 900px;
-	margin:auto;
-	padding-bottom: 20px;
-}
 
