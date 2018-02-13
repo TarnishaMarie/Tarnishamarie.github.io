@@ -15,38 +15,6 @@ body{
 }
 
 
-#topbar{
-	position:relative;
-	text-align:right;
-	padding-top: 30px;
-	width: 85%;
-	max-width: 900px;
-	margin:auto;
-	border-bottom:1px solid #B29E7D;
-	padding-bottom: 20px;
-
-}
-
-
-#logo{
-	display:block;
-	position:absolute;
-	top:0px;
-	left:20px;
-	width:100px;
-	background:#B29E7D;
-}
-
-.menu{
-	text-decoration: none; 
-	color: white;
-	padding-left:10px;
-	padding-right:10px;
-	padding-bottom: 10px;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 14px;
-
-}
 
 img{
 	display:block;
