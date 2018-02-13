@@ -1,45 +1,42 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
-*{
-	margin:0;
-	padding:0;
-	box-sizing: border-box;
-}
-
 
 body{
 	background-color: #14223F;
 	background-image: url(../images/name.svg);
 	background-repeat: no-repeat;
 	background-size: 105%;
-
-}
-
-img{
-	display:block;
-	width:100%;
+	background-position: bottom;
+	padding-top:30px;
+	padding-right:30px;
+	padding-left:30px;
+	padding-bottom:30px;
+	min-height: 100vh;
 }
 
 #topbar{
-	position:relative;
 	text-align:right;
-	padding-top: 30px;
+	padding-left:30px;
 	width: 85%;
 	max-width: 900px;
 	margin:auto;
-	border-bottom:1px solid #B29E7D;
-	padding-bottom: 20px;
 
 }
 
+#logosection{
+	
+	width:80%;
+	max-width: 900px;
+	padding-bottom: 20px;
+}
 
 #logo{
-	display:block;
+	float:left;
 	position:absolute;
-	top:0px;
-	left:20px;
-	width:100px;
-	background:#B29E7D;
+	top:20px;
+	left:10vw;
+	width:6%;
+	min-width: 50px;
 }
 
 
@@ -55,24 +52,34 @@ img{
 
 }
 
+hr{
+	 border: 1px solid #B29E7D;
+/*	 width: 85%;*/
+	 max-width: 950px;
+	 margin-top: 10px;
+	 margin-left:auto;
+	 margin-right:auto;
+	 margin-bottom: 60vh;
+	
+}
+
 /*#navsection{
-	margin-top:20px;
-}
-
-
-#navcircle{
-	position:relative;
-    width:60vw;
-    max-width:500px;
-    margin:0 auto;
-}
+	width:60vw;
+	top-margin:10em;
 	
 
-#navimage2, #navimage3, #gaussianblur {
+}*/
+	
 
+#navimage, #navimage2, #navimage3, #gaussianblur {
+
+	display:block;
 	position:absolute;
-	top:0;
-	left:0;
+	left: 30vw;
+  	top: 15vh;
+    width:60vw;
+    max-width:500px;
+/*    margin:auto;*/
 
 }
 
@@ -80,7 +87,6 @@ img{
 
 #navimage{
 	z-index:4;
-	position:relative;
 }
 
 #navimage2{
@@ -93,15 +99,6 @@ img{
 
 #gaussianblur{
 	z-index:1;
-}*/
-
-#svg {
-  width: 400px;
-  height: 200px;
-}
-
-.content{
-  text-align: center;
 }
 
 #slogan{
@@ -174,7 +171,7 @@ ul{
 
 #contactmelink{
 
-	color:#007cb3;
+	color:#7AC7C4;
 
 }
 
@@ -182,7 +179,19 @@ ul{
 	padding-top: 60vh;
 }
 
+/*
+#contactme{
 
+	color:#C8C8C8;
+	text-align: left;
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+	width:80%;
+	max-width: 900px;
+	margin:auto;
+	padding-bottom: 20px;
+
+}*/
 
 
 
