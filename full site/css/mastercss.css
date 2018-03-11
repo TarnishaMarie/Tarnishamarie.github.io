@@ -105,13 +105,17 @@ body{
   height: 200px;
 }
 
+#svg path:nth-child(2):after{
+	content:"Project";
+}
+
 .content{
   text-align: center;
 }
 
 /********************* project page style code *********************/
 
-#columntwo {
+.sticky-wrapper{
     border: none;
     float: left;
     width: 20%;

@@ -60,11 +60,12 @@ img{
 }
 
 
-#columntwo {
+.sticky-wrapper{
     border: none;
     float: left;
     width: 20%;
 }
+
 
 #columnthree {
     border: none;
@@ -151,4 +152,6 @@ img{
 	padding-bottom: 20px;
 	letter-spacing: .03em;
 }
+
+
 

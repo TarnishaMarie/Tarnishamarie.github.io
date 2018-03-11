@@ -4,6 +4,8 @@
 <head>
 	<title>Project Page</title>
 	<link rel="stylesheet" type="text/css" href="css/projectcss.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/jquery.sticky.js"></script>
 </head>
 <body>
 
@@ -34,10 +36,10 @@
 	<section id="three_column" class= "clearfix">
 
 		<aside id="columntwo" class= "timeline">
-  				<button id="button1" class="tlbtngroup">Research</button>
-  				<button id="button2" class="tlbtngroup">Design</button>
-  				<button id="button3" class="tlbtngroup">Testing</button>
-  				<button id="button4" class="tlbtngroup">Final Prototype</button>
+  				<a href="#research"  class="tlbtngroup">Research</a>
+  				<a href="#design"  class="tlbtngroup">Design</a>
+  				<a href="#testing"  class="tlbtngroup">Testing</a>
+  				<a href="#finalprototype"  class="tlbtngroup">Final Prototype</a>
 		</aside>
 
 		<section id="columnthree" >
@@ -45,13 +47,71 @@
 			<img id="placeholder" src="images/desktop01.svg">			
 			</figure>
 
-			<article>
+			<article id="research">
 				<h2 class="header2text">Design Phase Label</h2>
 				<p class="bodytext">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>		
-			</article>			
+			</article>	
+			<article id="design">
+				<h2 class="header2text">Design Phase Label</h2>
+				<p class="bodytext">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>		
+			</article>	
+			<article id="testing">
+				<h2 class="header2text">Design Phase Label</h2>
+				<p class="bodytext">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>		
+			</article>		
+			<article id="finalprototype">
+				<h2 class="header2text">Design Phase Label</h2>
+				<p class="bodytext">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>		
+			</article>								
 		</section>
 	</section>
 </wrapper>
+
+<script>
+	// Select all links with hashes
+$('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });
+
+
+
+  $(document).ready(function(){
+    $("#columntwo").sticky({topSpacing:30});
+  });
+
+</script>
 
 </body>
 </html>
