@@ -398,10 +398,9 @@ ul{
     list-style-type: none;
 }
 
-#contactmelink{
-
-	color:#007cb3;
-
+#fillertext{
+  max-width:700px;
+  margin: auto;
 }
 
 /********************* image style code *********************/
