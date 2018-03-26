@@ -1,0 +1,187 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+
+body{
+	background-color: #14223F;
+	background-image: url(../images/name.svg);
+	background-repeat: no-repeat;
+	background-size: 105%;
+
+}
+
+img{
+	display:block;
+	width:100%;
+}
+
+#topbar{
+	position:relative;
+	text-align:right;
+	padding-top: 30px;
+	width: 85%;
+	max-width: 900px;
+	margin:auto;
+	border-bottom:1px solid #B29E7D;
+	padding-bottom: 20px;
+
+}
+
+
+#logo{
+	display:block;
+	position:absolute;
+	top:0px;
+	left:20px;
+	width:100px;
+	background:#B29E7D;
+}
+
+
+
+.menu{
+	text-decoration: none; 
+	color: white;
+	padding-left:10px;
+	padding-right:10px;
+	padding-bottom: 10px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+
+}
+
+#navsection{
+	margin-top:20px;
+}
+
+
+#navcircle{
+	position:relative;
+    width:60vw;
+    max-width:500px;
+    margin:0 auto;
+}
+	
+
+#navimage2, #navimage3, #gaussianblur {
+
+	position:absolute;
+	top:0;
+	left:0;
+
+}
+
+
+#navimage{
+	z-index:4;
+	position:relative;
+}
+
+#navimage2{
+	z-index:3;
+}
+
+#navimage3{
+	z-index:2;
+}
+
+#gaussianblur{
+	z-index:1;
+}
+
+#svg {
+  width: 400px;
+  height: 200px;
+}
+
+.content{
+  text-align: center;
+}
+
+#slogan{
+	color:#C8C8C8;
+	text-align:left;
+	width:80%;
+	max-width: 900px;
+	padding-bottom: 20px;
+	margin:auto;
+}	
+
+
+#fillertext{
+	color:#C8C8C8;
+	text-align:left;
+	width:80%;
+	max-width: 900px;
+	margin:auto;
+	padding-bottom: 20px;
+}	
+
+
+.bodytext, #contactme{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 1.7em;
+	color:#C8C8C8;
+	width:80%;
+	max-width: 900px;
+	margin:auto;
+}
+
+.headertext{
+	font-family: 'Open Sans', sans-serif;
+	color:#B29E7D;
+	font-size: 24px;
+	font-weight: 700;
+	letter-spacing:0.1em;
+	line-height: 1.5em;
+	width:80%;
+	max-width: 900px;
+	margin:auto;
+	padding-bottom: 20px;
+}
+
+.headertwotext{
+	color:#B29E7D;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+	letter-spacing:0.1em;
+	line-height: 1.5em;
+	width:80%;
+	max-width: 900px;
+	margin:auto;
+	padding-bottom: 20px;
+}
+
+
+#inter{
+	color:#B29E7D;
+}
+
+
+ul{
+	padding: 0;
+    list-style-type: none;
+}
+
+#contactmelink{
+
+	color:#007cb3;
+
+}
+
+#bottomtext{
+	padding-top: 60vh;
+}
+
+
+
+
+
