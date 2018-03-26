@@ -10,7 +10,7 @@ body{
 	background-color: #14223F;
 	background-image: url(../images/name.svg);
 	background-repeat: no-repeat;
-	background-size: 105%;
+	background-size: 105%
 	background-position: center;
 	font-size: 14px;
 
@@ -52,60 +52,90 @@ body{
 
 
 
-/********************* home page style code *********************/
+/********************* home page-circle style code *********************/
 
-#navsection{
-	margin-top:1.5em;
+a {
+    color: transparent;
+    text-decoration: none;
+}
+
+h3, p {
+    margin: 0;
+}
+
+.text {
+    display:none;
+    text-indent: -999999999em;
+}
+
+.cogInside-purple{
+	width:100%;
+	max-width:450px;
+	margin: 0 auto;
+}
+
+.circular-nav {
+    border-radius: 50%; 
+    box-shadow: 0px -1px 20px 4px rgba(141,141,141,0.4);
+    height: 0;
+    width:100%;
+    padding-bottom:100%;
+    list-style: none;
+    margin: 75px auto;
+    overflow: hidden;  
+   /* padding: 0;*/
+    /*width: 450px;*/
+    background-image: url(../images/circle.svg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: 0px 0px; 
+    transform: rotate(90deg);
+
+}
+
+.circular-nav .circular-nav-piece {
+    /*border: 1px solid white;*/
+    height: 0;
+    padding-bottom:100%;
+    position: absolute;
+    top: -49%;
+    left: -49%;
+    overflow: hidden; 
+    width: 100%;
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%; 
+
 }
 
 
-#navcircle{
-	position:relative;
-    width:60%;
-    /*max-width:500px;*/
-    margin:0 auto;
-}
-	
-
-#navimage2, #navimage3, #gaussianblur {
-
-	position:absolute;
-	top:0;
-	left:0;
-
+.purple-ul {
+    -webkit-transform: rotate(0deg) skew(0deg);
+    transform: rotate(0deg) skew(0deg);
 }
 
-
-#navimage{
-	z-index:4;
-	position:relative;
+.purple-ul a:nth-child(1) {
+    background-color: rgba(0,255,0,0.4);
+    -webkit-transform: rotate(303deg) skew(-25deg);
+    transform: rotate(273deg) skew(-27deg);
+}
+.purple-ul a:nth-child(2) {
+    background-color: rgba(255,0,0,0.4);
+    -webkit-transform: rotate(57deg) skew(-33deg);
+    transform: rotate(32deg) skew(-24deg);
+}
+.purple-ul a:nth-child(3) {
+   	background-color: rgba(0,0,255,0.4);
+    -webkit-transform: rotate(180deg) skew(-33deg);
+    transform: rotate(148deg) skew(-33deg);
 }
 
-#navimage2{
-	z-index:3;
-}
-
-#navimage3{
-	z-index:2;
-}
-
-#gaussianblur{
-	z-index:1;
-}
-
-#svg {
- /* width: 60%;*/
-  height: 50vh;
-  top-margin: 30px;
-  bottom-margin: 30px;
-}
-
-#svg path:nth-child(2):after{
-	content:"Project";
-}
 
 .content{
   text-align: center;
+}
+
+#circlecontainer{
+	overflow: hidden;
 }
 
 /********************* project page style code *********************/
@@ -167,6 +197,135 @@ body{
 	min-width:200px;
 	padding-bottom: 20px;
 }
+
+/********************* contact page style code *********************/
+
+/*body {
+  margin: 0;
+  padding: 0;
+}
+*/
+#contact {
+  width: 100%;
+  height: 100vh;
+/*  background-color: #111;*/
+  overflow: hidden;
+  padding-bottom: 400px;
+  margin:30px auto;
+}
+
+.section-header {
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 50px;
+  margin-bottom: 50px;
+  font:  2em 'Lato', sans-serif;
+  letter-spacing: 6px;
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+.contact-wrapper {
+  margin: 0 auto;
+  padding-top: 20px;
+  position: relative;
+  max-width: 800px;
+}
+
+/* Begin Left Contact Page */
+.form-horizontal {
+  max-width:800px;
+  font-family: 'Lato';
+  font-weight: 400;
+  margin:30px auto;
+}
+
+.form-control, textarea {
+  width: 40vw;
+  max-width: 800px;
+  background-color: white;
+  color: black;
+  letter-spacing: 1px;
+  margin-top: 15px;
+}
+
+.send-button {
+  margin-top: 15px;
+  height: 34px;
+  width: 40vw;
+  overflow: hidden;
+  transition: all .2s ease-in-out;
+}
+
+.button {
+  width: 400px;
+  height: 34px;
+  transition: all .2s ease-in-out;
+}
+
+.send-text {
+  display: block;
+  margin-top: 10px;
+  font: 300 14px 'Lato', sans-serif;
+  letter-spacing: 2px;
+}
+
+.button:hover {
+  transform: translate3d(0px, -29px, 0px);
+}
+
+/* Begin Right Contact Page */
+.direct-contact-container {
+/*  float: right;*/
+  text-align: center;
+  margin: 30px auto;
+
+}
+
+/* Location, Phone, Email Section */
+.contact-list {
+  list-style-type: none;
+  margin-left: -30px;
+  padding-right: 20px;
+}
+
+.list-item {
+  line-height: 4;
+  color: #aaa;
+}
+
+.contact-text {
+  font: 300 18px 'Lato', sans-serif;
+  letter-spacing: 1.9px;
+  color: #bbb;
+}
+
+.place {
+  margin-left: 62px;
+}
+
+.phone {
+  margin-left: 56px;
+}
+
+.gmail {
+  margin-left: 53px;
+}
+
+.contact-text a {
+  color: #bbb;
+  text-decoration: none;
+  transition-duration: 0.2s;
+}
+
+.contact-text a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+
+
 
 /********************* text styles *********************/
 
@@ -235,6 +394,18 @@ img{
 	width:100%;
 }
 
+#me {
+
+	display:block;
+	width:80vw;
+	max-width:40em;
+	margin: auto;
+	margin-top:30px;
+	margin-bottom: 30px;
+
+}
+
+/********************* Media Queries *********************/
 
 @media only screen and (max-width: 768px) {
 
@@ -249,12 +420,15 @@ img{
 
 		width:100%;
 	}
+
 }
 
 
 @media only screen and (max-width: 360px) {
 
 	body{
+
+		background-height: 50%;
 /*
 		text-align:center;*/
 	}
@@ -270,4 +444,7 @@ img{
 
 		width:100%;
 	}
+
 }
+
+
